@@ -1,0 +1,5 @@
+When would you want to use a remote repository rather than keeping all your work local?
+You would greatly benefit from a remote repo when multiple people are collaborating on the same project.  Also, it is helpful
+when you must access the same code from multiple machines, or if you must be able to show code to another person when you're
+not at your computer.
+
