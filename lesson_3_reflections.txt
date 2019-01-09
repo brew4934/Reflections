@@ -3,3 +3,41 @@ You would greatly benefit from a remote repo when multiple people are collaborat
 when you must access the same code from multiple machines, or if you must be able to show code to another person when you're
 not at your computer.
 
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your
+remote repository?
+The remote changes may create conflicts with your local copy, and you may want to continue developing your local feature
+before resolving conflicts.
+
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+forks make a complete copy of a repository on the GitHub servers, and associate it with your own account.  This also keeps
+the commit history and attribution to the original repo.  This is used for personal development of an existing project that
+is separate from the  original project.
+Clones are used when you want to checkout a copy of code to work on, and be able to commit changes to the repository that it
+was taken from.
+Branching is used to separate development betweenHow would you collaborate without using Git or GitHub? What would be easier, and what would be harder?features in a single repository, and allows multiple changes to be merged
+together at a later point in time.
+
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+By having last known state of remote stored locally, it makes it easier to know which commits have been added to remote since
+the last time everything was synced.  This makes grabbing only neccessary remote information easier, as well as aides the
+programmer in figuring out which changes have/have not been made to the working copy.
+
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+Without Git, you could collaborate by having a single master copy of the code in a write-protected folder that everyone can
+copy from, but only an authorized user can write to.  Everyone could develop on their own, send files to the authorized
+writer, and have him update the master files.  This would not automatically save change log, so a manual log would need to be
+made.  It would also not provide an easy way for each contributor to bring in changes that have been made to the master copy
+while they have been working.  It would make "committing" easier for many contributors, since it would all be handled by a
+single person but not them.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach
+have?
+When collaborating, using a separate branch is important, so multiple people can work on different features without
+constantly having to update their local copy with unrelated changes.  It also allows the work to be compartamentalized into
+individual problems, which helps with project planning.  Furthermore, it allows you control over who can work on what, and
+prevents uncompiling changes from making it into master.  You can always have a working version of the code, in addition to
+experimental versions that may or may not be working.
