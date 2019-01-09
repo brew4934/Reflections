@@ -1,0 +1,28 @@
+What happens when you initialize a repository? Why do you need to do it?
+When you initialize a repository, a .git folder is created to track changes, but no commits are
+made.  You can initialize a repo in an empty directory or a directory containing files, but none
+of the files are automatically committed.  Without performing this, the directory is just a
+directory and no git commands will work, and no history will be tracked.
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+The staging area does not allow modifications, but does not permanently save or commit any changes
+either.  It provides an additional layer of separation between the development area and the repo
+to prevent unintentional/unthoughtful commits, as well as providing an easy way to commit only
+related changes, even though other unrelated changes may have been made in the working dir.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+You can commit or exclude individual changes, even from within a single file, which allows you
+to ensure all changes in a commit only belong to one logical change.
+
+
+What are some situations when branches would be helpful in keeping your history organized? How
+would branches help?
+Branches would be helpful when developing many unique features on a large project.  Each feature
+can have its own branch so the history of each component is separate.  If an issue with a specific
+feature arises in the future, or a modification needs to be tracked down, there will be an obvious
+starting point on where to look.
+
+
+
